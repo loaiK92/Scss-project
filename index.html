@@ -24,13 +24,15 @@
 	</header>
 	<main class="cf">
 		<article class="cf">
-			<section class="firstSec">
+			<section class="topSec">
 				<h1 class="secTitle">Preprocessing</h1>
 				<p class="secText">CSS on its own can be fun, but stylesheets are getting larger, more complex, and harder to maintain. This is where a preprocessor can help. Sass lets you use features that don't exist in CSS yet like variables, nesting, mixins, inheritance and other nifty goodies that make writing CSS fun again.</p>
 				<p class="secText">Once you start tinkering with Sass, it will take your preprocessed Sass file and save it as a normal CSS file that you can use in your web site.</p>
 				<p class="secText">The most direct way to make this happen is in your terminal. Once Sass is installed, you can run <span class="codeInText">sass input.scss output.css</span> from your terminal. You can watch either individual files or entire directories. In addition, you can watch folders or directories with the <span class="codeInText">--watch</span> flag. An example of running Sass while watching an entire directory is the following:</p>
-				<div class="codeText">
-					<p class="codeTextP"><span class="se">sass --watch app/sass:public/stylesheets</span></p>
+				<div class="codeBox">
+					<div class="codeText">
+						<p class="codeTextP"><span class="se">sass --watch app/sass:public/stylesheets</span></p>
+					</div>
 				</div>
 			</section>
 			<section class="secondSec">
@@ -48,10 +50,12 @@
 					</div>
 				</div>
 				<p class="secText">When the Sass is processed, it takes the variables we define for the <span class="codeInText">$font-stack</span> and <span class="codeInText">$primary-color</span> and outputs normal CSS with our variable values placed in the CSS. This can be extremely powerful when working with brand colors and keeping them consistent throughout the site.</p>
-				<div class="codeText">
-					<p class="codeTextP"><span class="se">body</span> {</p>
-					<p class="codeTextP"><span class="pr">font</span>: <span class="va">100%</span> <span class="se">Helvetica</span>, <span class="va">sans-serif</span>;</p>
-					<p class="codeTextP"><span class="pr">color</span>: <span class="va">#333</span>;</p>
+				<div class="codeBox">
+					<div class="codeText">
+						<p class="codeTextP"><span class="se">body</span> {</p>
+						<p class="codeTextP"><span class="pr">font</span>: <span class="va">100%</span> <span class="se">Helvetica</span>, <span class="va">sans-serif</span>;</p>
+						<p class="codeTextP"><span class="pr">color</span>: <span class="va">#333</span>;</p>
+					</div>
 				</div>
 			</section>
 		</article>
