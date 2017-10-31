@@ -49,19 +49,61 @@ html ,body {
 	border-radius: 10px;
 	font-family: 'Kalam', cursive;
   font-weight: bold;
-	color: #fff;
+	color: #F2B637;
 	font-size: 1.5em;
 	padding: 10px 20px;
-	border: solid #fff 3px;
+	border: solid #F2B637 3px;
 	text-transform: uppercase;
 	text-decoration: none;
 	text-shadow: 5px 5px 20px #000;
 	box-shadow: inset 5px 5px 20px #333,5px 5px 20px #333;
 }
 .content .btn:hover{
-	color: #F2B637;
-	border:3px solid #F2B637 ;
+	color: #fff;
+	border:3px solid #fff ;
 }
+
+.icons {
+	position: absolute;
+	top: 550px;
+	right: 615px;
+}
+
+.icons li {
+	display: inline-block;
+	list-style: none;
+	margin-left: 25px;
+}
+.icons li a {
+	text-decoration: none;
+	color: #F2B637;
+}
+.icons li a span {
+	display: block;
+	opacity: 0;
+	background: rgba(42,46, 55, 0.3);
+	border-radius: 5px;
+}
+.icons li a:hover span {
+	opacity: .9;
+}
+
+#aboutUs ,#contact, #ask {
+	display: none;
+	position: absolute;
+	top: 50px;
+	left: 150px;
+	width: 80%;
+	height: 80%;
+	border: 2px solid #F2B637;
+	border-radius: 10px;
+	background: rgba(42,46, 55, 0.5);
+}
+
+#aboutUs p ,#contact p, #ask p {
+	color: #fff;
+}
+
 /****************Top Navbar****************/
 
 #navbar {
