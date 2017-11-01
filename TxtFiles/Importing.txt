@@ -1,0 +1,46 @@
+
+Importing
+-------------------------------
+Importing is a process by which a lot of files are turned into a few files.
+Sass has a neat little trick whereby the smaller style sheets are imported
+into the larger one as it is compiled into CSS. All you need to type is
+@import, followed by the name of the Sass file you want to import. You
+can mix Original Sass and SCSS at will with imports—it’s all the same.
+
+Just say @import “sub_page”; and you’re done!
+Create a separate file.
+_colors.scss
++++++++++++++++++++++++
+$main_color: #336699;
+// A LOT MORE COLORS GO HERE.
++++++++++++++++++++++++
+_widths.scss
++++++++++++++++++++++++
+$main_width: 720px;
+// A LOT MORE WIDTHS GO HERE.
++++++++++++++++++++++++++++++++++
+now Import into the main file.
+(We don’t need to include the underscore or extension with _colors.scss.)
+++++++++++++++++++++++++++++++++
+@import "colors";
+@import "widths";
+#page {
+color: $main_color;
+width: $main_width; }
+#sidebar {
+color: darken($main_color, 10%);
+width: $main_width*0.2; }
+++++++++++++++++++++++++++++
+This compiles to:
++++++++++++++++++++++++++++
+#page {
+color: #336699;
+width: 720px; }
+#sidebar {
+color: #264c73;
+width: 144px; }
+++++++++++++++++++++++++++
+Remember the rule about the underscores—when we compile into
+CSS, the two imported files will not be treated the same. The
+widths.scss file will create its own separate CSS file because it doesn’t
+start with an underscore.

@@ -1,0 +1,93 @@
+**Commenting
+-------------
+Comments are snippets of text that are ignored by the browser. Sass
+gives us the option of two types of comments. One will only show up
+in the Sass document, and the other will be incorporated into the CSS
+that’s compiled.
+The comment style that’s compiled into the CSS is the same one you’re
+probably used to—in fact, it’s exactly the same as the CSS comment
+style. Just place your comment between /* and */. These comments can
+be on multiple lines.
+If we want to write a comment that will only appear in the Sass file,
+then we place the comment after //. This style only works for singleline
+comments, though.
+
++++++++++++++++++++++++++++++++
+/* Hey look at this multiline comment
+* that we want to show up in our CSS
+* output. */
+#page {
+color: black; }
+// These comments are single lines
+// and we do not want them to appear
+// in our CSS
+#sidebar {
+color: #336699; }
++++++++++++++++++++++++++++++++++
+
+
+**Selector Scoping
+----------------
+Let’s look at a core feature of Sass: nesting. If you’ve been working
+with CSS for a long time, you know the advantages of giving more
+specific selectors to your style sheets. Using .sidebar p em allows you
+greater specificity to the em element versus a standalone em selector.
+It gives you more freedom with reusing names and making your
+HTML more semantic and readable. We generally refer to this as
+scoping.
+It’s a good thing to scope, except it’s not DRY. (Remember Don’t Repeat
+Yourself?). We keep having to repeat our classes or IDs—for example,
+repeating an apply-to-all class like .infobox—on every line. Typing this
+by hand is laborious and makes us want to be lazy. When writing CSS,
+scoping can be very tedious. It involves a lot of copying and pasting.
+What’s more, keeping track of parent-child relationships is tough. We
+can do better than that! Technology should support good behaviors.
+Sass is here to help us with nesting.
+We can put a style such as a border color inside a declaration block,
+and Sass will automatically do the repetitive part for you when you
+generate CSS. I bet your fingers are thanking you already for saving
+all that typing. Cool, huh?
+A small note: the CSS that’s compiled in the example opposite looks
+a bit funny, doesn’t it? Especially when we compare it to the original
+(repetitive) CSS example we wrote out. What happens is that the Sass
+engine keeps the indentation when it converts to CSS. All it does is
+insert the missing selectors.
+
+Look at this scoped CSS.
+Look how much repetition there is in this file. Holy cow!
++++++++++++++++++++++++++++++++++++++++++++
+.infobox { width: 200px; }
+.infobox .message { border: 1px solid red; }
+.infobox .message .title { color: red; }
+.infobox .user { border: 2px solid black; }
+.infobox .user .title { color: black; }
++++++++++++++++++++++++++++++++++++++++++++
+See it in Scss.
+Instead of repeating it, just nest it inside the parent selector.
+++++++++++++++++++++++++++++++++++++++++++++++
+.infobox {
+width: 200px;
+.message {
+border: 1px solid red;
+.title {
+color: red;}
+}
+.user {
+border: 2px solid black;
+.title {
+color: black; } } }
+This compiles to:
+.infobox {
+width: 200px; }
+.infobox .message {
+border: 1px solid red; }
+.infobox .message .title {
+color: red; }
+.infobox .user {
+border: 2px solid black; }
+.infobox .user .title {
+color: black; }
+++++++++++++++++++++++++++++++++++++
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++
