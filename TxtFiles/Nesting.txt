@@ -1,0 +1,36 @@
+Nesting
+--------
+CSS does support logical nesting, but the code blocks themselves are not nested. Sass allows the nested code to be inserted within each other.
+
+In SCSS style
+++++++++++++++++++++++
+table.hl {
+  margin: 2em 0;
+  td.ln {
+    text-align: right;
+  }
+}
+
+li {
+  font: {
+    family: serif;
+    weight: bold;
+    size: 1.3em;
+  }
+}
+++++++++++++++++++++++++++
+Would compile to:
++++++++++++++++++++++++++++
+table.hl {
+  margin: 2em 0;
+}
+table.hl td.ln {
+  text-align: right;
+}
+
+li {
+  font-family: serif;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+++++++++++++++++++++++++++++
