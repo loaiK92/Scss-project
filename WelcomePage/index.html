@@ -14,6 +14,11 @@
 				<h1>An Introduction to <span>SASS/SCSS</span></h1>
 				<a href="#navbar" class="btn">Get Started&#8628;</a>
 			</div>
+			<ul class="icons">
+			<li><a class="about" href="#aboutUs"><img src="https://png.icons8.com/about/ios7/50/f1c40f"><span>About us</span></a></li>
+			<li><a class="communication" href="#"><img src="https://png.icons8.com/communication/ios7/50/f1c40f"><span>Contact</span></a></li>
+			<li><a class="question" href="#"><img src="https://png.icons8.com/ask-question/ios7/50/f1c40f"><span>Question</span></a></li>
+		</ul>
 		</div>
 		<div id="aboutUs">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsum repellendus, error laborum eligendi officia accusantium. Veritatis doloribus consequuntur facilis dolorem labore quas tenetur nisi atque iste, eaque, non voluptatem.</p>
@@ -24,12 +29,6 @@
 		<div id="ask">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsum repellendus, error laborum eligendi officia accusantium. Veritatis doloribus consequuntur facilis dolorem labore quas tenetur nisi atque iste, eaque, non voluptatem.</p>
 		</div>
-		<ul class="icons">
-			<li><a class="about" href="#aboutUs"><img src="https://png.icons8.com/about/ios7/50/f1c40f"><span>About us</span></a></li>
-			<li><a class="communication" href="#"><img src="https://png.icons8.com/communication/ios7/50/f1c40f"><span>Contact</span></a></li>
-			<li><a class="question" href="#"><img src="https://png.icons8.com/ask-question/ios7/50/f1c40f"><span>Question</span></a></li>
-		</ul>
-	
 
 	</section>
 		<div id="navbar">
@@ -47,13 +46,140 @@
 	<main class="topContent">
 		<article>
 			<section class="firstSec">
-				<h1 class="secTitle">Preprocessing</h1>
-				<p class="secText">CSS on its own can be fun, but stylesheets are getting larger, more complex, and harder to maintain. This is where a preprocessor can help. Sass lets you use features that don't exist in CSS yet like variables, nesting, mixins, inheritance and other nifty goodies that make writing CSS fun again.</p>
-				<p class="secText">Once you start tinkering with Sass, it will take your preprocessed Sass file and save it as a normal CSS file that you can use in your web site.</p>
-				<p class="secText">The most direct way to make this happen is in your terminal. Once Sass is installed, you can run <span class="codeInText">sass input.scss output.css</span> from your terminal. You can watch either individual files or entire directories. In addition, you can watch folders or directories with the <span class="codeInText">--watch</span> flag. An example of running Sass while watching an entire directory is the following:</p>
-				<div class="codeText">
-					<p class="codeTextP"><span class="se">sass --watch app/sass:public/stylesheets</span></p>
+				<h1 class="secTitle">Sass (stylesheet language) :</h1>
+				<p class="secText">Sass <span class="codeInText">(syntactically awesome stylesheets)</span> is a style sheet language initially designed by Hampton Catlin and developed by Natalie Weizenbaum. After its initial versions, Weizenbaum and Chris Eppstein continued to extend Sass with SassScript, a simple scripting language used in Sass files.</p>
+				<p class="secText">Sass is a scripting language that is interpreted or compiled into Cascading Style Sheets <span class="codeInText">(CSS)</span>. SassScript is the scripting language itself. Sass consists of two syntaxes. The original syntax, called <span class="codeInText">"the indented syntax"</span>, uses a syntax similar to Haml. It uses indentation to separate code blocks and newline characters to separate rules. The newer syntax, <span class="codeInText">"SCSS"</span>, uses block formatting like that of CSS. It uses braces to denote code blocks and semicolons to separate lines within a block. The indented syntax and SCSS files are traditionally given the extensions .sass and .scss, respectively.</p>
+				<ul class="secText">
+					<h3 class="codeHeader">Features:</h3>
+					<li>Fully CSS-compatible</li>
+					<li>Language extensions such as variables, nesting, and mixins</li>
+					<li>Many useful functions for manipulating colors and other values</li>
+					<li>Advanced features like control directives for libraries</li>
+					<li>Well-formatted, customizable output</li>
+				</ul>
+				<h3 class="codeHeader">when should we learn Scss/Sass?</h3>
+				<p class="secText">Sass is for people who know the pain of working on
+									the CSS of a mature website—who have faced a CSS file that
+									four people wrote and that mutated into a huge, sprawling,
+									incoherent mess. We’ve looked the beast in the eye and
+									barely survived.</p>
+				<p class="secText">You’re probably already familiar with CSS, HTML, and the
+									ideals of semantic web development. We can all agree that
+									markup should be about logic instead of about presentation
+									(as much as possible). And we’ll assume that you’re familiar
+									with margins, padding, the box model, @media queries, and
+									the myriad of other CSS-related technologies.
+									If you are looking for a CSS-ninja power-up, you’ve come
+									to the right place.</p>
+				<h3 class="codeHeader">Installing Sass :</h3>
+				<p class="secText">So before you can explore the simplicity (and beauty) of Sass, you’ll
+									need to set a few things up. It’s useful to have a folder where you keep
+									all your Sass files for a project. Creating a Sass file couldn’t be easier:
+									just use the extension .scss—or .sass for an Original Sass file.
+									The only tool you need is a text editor. Every OS comes with something,
+									but of course that’s not always the best something. Generally, just use
+									whatever you usually use to write CSS. We recommend some text
+									editors with each set of installation instructions.
+									In order to install and run Sass, you need to have Ruby installed on
+									your system. We’ll go through how to do this in the three major OS
+									categories. </p>
+				<div class="install">
+					<h4 class="install-header">Installation on Windows :</h4>
+					<p class="secText">Because Windows doesn’t come with Ruby, you’ll need to install it.
+										There are a few installers around the Internet, but we preferthe simple
+										one at RubyInstaller.4
+										Once Ruby has been installed, you need to access the command line.
+										Go to Start, then Accessories, then find Command Prompt. That should
+										open a window that will allow you to run the needed install commands.
+										A decent text editor for Windows is Notepad++.
+										</p>
 				</div>
+				<div class="install">
+					<h4 class="install-header">Installation on a Mac :</h4>
+					<p class="secText">Unlike Windows, Ruby is already installed on OS X, making things a
+										bit easier. All we need to do is open the Terminal application and install
+										Sass via the command line. The text editor that we use on our Macs is
+										TextMate.
+										</p>
+				</div>
+				<div class="install">
+					<h4 class="install-header">Installation for Linux :</h4>
+					<p class="secText">If you’re a Linux user, you’ll be aware of how to access your command
+										line—we won’t insult your Unix-fu. To install Ruby (and Ruby gems),
+										use your package manager. We recommend Ruby version 1.9.2. As
+										for text editors, Vim tends to be the most popular.<br>
+										➤ Use this command to install Sass.
+										</p>
+					<p class="terminal">gem install sass</p>
+					<p class="secText">Create a simple Sass file.
+										Name a file test.scss with the following contents:
+										</p>
+					<div class="codeText">
+						<p class="codeTextP"><span class="se">.red</span> {</p>
+						<p class="codeTextP"><span class="pr">color</span>: <span class="va">red</span>;</p>
+						<p class="codeTextP">}</p>
+					</div>
+					<p class="secText">Test that Sass is working.
+										Navigate to the folder containing the test.scss file via the command
+										line and you should see the following if you run the command sass
+										test.scss.
+										</p>
+					<p class="terminal">sass test.scss</p>
+					<div class="codeText">
+						<p class="codeTextP"><span class="se">.red</span> {</p>
+						<p class="codeTextP"><span class="pr">color</span>: <span class="va">red</span>;</p>
+						<p class="codeTextP">}</p>
+					</div>
+					<p class="secText">It just reformatted the CSS we wrote above. Now we’re ready to show
+										you how to rock some Sass superpowers.
+										</p>
+				</div>
+				<h3 class="codeHeader">Compiling Sass into CSS :</h3>
+				<p class="secText">First, we need to create a Sass file. Any old thing will do—this is just
+									to show how we can turn our Sass into CSS. Since CSS is valid Sass,
+									take any random CSS file you have sitting around and change its
+									extension to .scss.<br>
+									Now, let’s go to our command line. Type sass, followed by the name
+									of your file.<br>
+									Look at that! Oh right, it just printed out the CSS but in a different
+									format. And printing out your CSS files to the console isn’t very useful.
+									It would be better if we could make a separate CSS file.<br>
+									Well, you can! Run the sass command again with a second argument
+									that specifies the output file you want. For instance, you might say
+									sass test.scss test.css and Sass will generate a CSS file named test.css.
+									Running that command over and over would be extremely tedious as
+									we edit our Sass file. If you are using Rails or another framework, it
+									can automatically update your CSS for you. But when we aren’t using
+									a framework, we have a neat command-line trick for converting Sass
+									files into CSS files as we alter them. It’s called watch.
+									watch will take any .scss file found in the specified Sass folder and
+									convert it into a .css file in the specified CSS folder. Magic! It doesn’t
+									just do this once either. It constantly watches the file for any changes
+									and incorporates them into the CSS file.<br>
+									Another useful command to mention here is convert. You can use this
+									to turn a .css file into a .sass or .scss file.<br>
+									<br>➤ Start with a simple bit of Sass.
+									</p>
+				<div class="codeText">
+					<p class="codeTextP"><span class="se">.fab_text</span> {</p>
+					<p class="codeTextP"><span class="pr">color</span>: <span class="va">#336699</span>;</p>
+					<p class="codeTextP"><span class="pr">font-size</span>: <span class="va">2em</span>;</p>
+					<p class="codeTextP">}</p>
+				</div>
+				<p class="secText">➤ Type this in your command line.</p>
+				<p class="terminal">sass fabtext.scss</p>
+				<p class="secText">You should see the following:</p>
+				<div class="codeText">
+					<p class="codeTextP"><span class="se">.fab_text</span> {</p>
+					<p class="codeTextP"><span class="pr">color</span>: <span class="va">#336699</span>;</p>
+					<p class="codeTextP"><span class="pr">font-size</span>: <span class="va">2em</span>;</p>
+					<p class="codeTextP">}</p>
+				</div>
+				<p class="secText">➤ Watch a folder.<br>Assuming we have a Sass and a CSS folder, the 							command would look like this:
+									</p>
+				<p class="terminal">sass --watch stylesheets/sass:stylesheets/css</p>
+				<p class="secText">➤ Convert a CSS file to a Sass file.</p>
+				<p class="terminal">sass convert test.css test.sass</p>
 			</section>
 			<section class="secondSec">
 				<h1 class="secTitle">Variables</h1>
@@ -74,69 +200,7 @@
 					<p class="codeTextP"><span class="se">body</span> {</p>
 					<p class="codeTextP"><span class="pr">font</span>: <span class="va">100%</span> <span class="se">Helvetica</span>, <span class="va">sans-serif</span>;</p>
 					<p class="codeTextP"><span class="pr">color</span>: <span class="va">#333</span>;</p>
-				</div>
-			</section>
-			<section class="secondSec">
-				<h1 class="secTitle">Variables</h1>
-				<p class="secText">Think of variables as a way to store information that you want to reuse throughout your stylesheet. You can store things like colors, font stacks, or any CSS value you think you'll want to reuse. Sass uses the <span class="codeInText">$</span> symbol to make something a variable. Here's an example:</p>
-				<div class="codeBox">
-					<h3 class="codeHeader">SCSS Syntax</h3>
-					<div class="codeText">
-						<p class="codeTextP"><span class="va">$font-stack</span>:<span class="se">Helvetica</span>, <span class="va">sans-serif</span>;</p>
-						<p class="codeTextP"><span class="va">$primary-color</span>: <span class="va">#333</span>;</p>
-						<p class="codeTextP"><span class="se">body</span> {</p>
-						<p class="codeTextP"><span class="pr">font</span>: <span class="va">100% $font-stack</span>;</p>
-						<p class="codeTextP"><span class="pr">font</span>: <span class="va">$primary-color</span>;</p>
-						<p class="codeTextP">}</p>
-					</div>
-				</div>
-				<p class="secText">When the Sass is processed, it takes the variables we define for the <span class="codeInText">$font-stack</span> and <span class="codeInText">$primary-color</span> and outputs normal CSS with our variable values placed in the CSS. This can be extremely powerful when working with brand colors and keeping them consistent throughout the site.</p>
-				<div class="codeText">
-					<p class="codeTextP"><span class="se">body</span> {</p>
-					<p class="codeTextP"><span class="pr">font</span>: <span class="va">100%</span> <span class="se">Helvetica</span>, <span class="va">sans-serif</span>;</p>
-					<p class="codeTextP"><span class="pr">color</span>: <span class="va">#333</span>;</p>
-				</div>
-			</section>
-			<section class="secondSec">
-				<h1 class="secTitle">Variables</h1>
-				<p class="secText">Think of variables as a way to store information that you want to reuse throughout your stylesheet. You can store things like colors, font stacks, or any CSS value you think you'll want to reuse. Sass uses the <span class="codeInText">$</span> symbol to make something a variable. Here's an example:</p>
-				<div class="codeBox">
-					<h3 class="codeHeader">SCSS Syntax</h3>
-					<div class="codeText">
-						<p class="codeTextP"><span class="va">$font-stack</span>:<span class="se">Helvetica</span>, <span class="va">sans-serif</span>;</p>
-						<p class="codeTextP"><span class="va">$primary-color</span>: <span class="va">#333</span>;</p>
-						<p class="codeTextP"><span class="se">body</span> {</p>
-						<p class="codeTextP"><span class="pr">font</span>: <span class="va">100% $font-stack</span>;</p>
-						<p class="codeTextP"><span class="pr">font</span>: <span class="va">$primary-color</span>;</p>
-						<p class="codeTextP">}</p>
-					</div>
-				</div>
-				<p class="secText">When the Sass is processed, it takes the variables we define for the <span class="codeInText">$font-stack</span> and <span class="codeInText">$primary-color</span> and outputs normal CSS with our variable values placed in the CSS. This can be extremely powerful when working with brand colors and keeping them consistent throughout the site.</p>
-				<div class="codeText">
-					<p class="codeTextP"><span class="se">body</span> {</p>
-					<p class="codeTextP"><span class="pr">font</span>: <span class="va">100%</span> <span class="se">Helvetica</span>, <span class="va">sans-serif</span>;</p>
-					<p class="codeTextP"><span class="pr">color</span>: <span class="va">#333</span>;</p>
-				</div>
-			</section>
-			<section class="secondSec">
-				<h1 class="secTitle">Variables</h1>
-				<p class="secText">Think of variables as a way to store information that you want to reuse throughout your stylesheet. You can store things like colors, font stacks, or any CSS value you think you'll want to reuse. Sass uses the <span class="codeInText">$</span> symbol to make something a variable. Here's an example:</p>
-				<div class="codeBox">
-					<h3 class="codeHeader">SCSS Syntax</h3>
-					<div class="codeText">
-						<p class="codeTextP"><span class="va">$font-stack</span>:<span class="se">Helvetica</span>, <span class="va">sans-serif</span>;</p>
-						<p class="codeTextP"><span class="va">$primary-color</span>: <span class="va">#333</span>;</p>
-						<p class="codeTextP"><span class="se">body</span> {</p>
-						<p class="codeTextP"><span class="pr">font</span>: <span class="va">100% $font-stack</span>;</p>
-						<p class="codeTextP"><span class="pr">font</span>: <span class="va">$primary-color</span>;</p>
-						<p class="codeTextP">}</p>
-					</div>
-				</div>
-				<p class="secText">When the Sass is processed, it takes the variables we define for the <span class="codeInText">$font-stack</span> and <span class="codeInText">$primary-color</span> and outputs normal CSS with our variable values placed in the CSS. This can be extremely powerful when working with brand colors and keeping them consistent throughout the site.</p>
-				<div class="codeText">
-					<p class="codeTextP"><span class="se">body</span> {</p>
-					<p class="codeTextP"><span class="pr">font</span>: <span class="va">100%</span> <span class="se">Helvetica</span>, <span class="va">sans-serif</span>;</p>
-					<p class="codeTextP"><span class="pr">color</span>: <span class="va">#333</span>;</p>
+					<p class="codeTextP">}</p>
 				</div>
 			</section>
 		</article>
@@ -155,16 +219,16 @@
 		</aside> -->
 	</main>
 	<script type="text/javascript">
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+			var navbar = document.getElementById("navbar");
+			var sticky = navbar.offsetTop;
 
-function navbarFun() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
+			function navbarFun() {
+			  if (window.pageYOffset >= sticky) {
+			    navbar.classList.add("sticky")
+			  } else {
+			    navbar.classList.remove("sticky");
+			  }
+			}
 </script>
 </body>
 </html>
