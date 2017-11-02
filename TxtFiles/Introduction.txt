@@ -73,7 +73,7 @@ color: red;
 Navigate to the folder containing the test.scss file via the command
 line and you should see the following if you run the command sass
 test.scss.
-$> sass test.scss
+sass test.scss
 .red {
 color: red; }
 It just reformatted the CSS we wrote above. Now we’re ready to show
