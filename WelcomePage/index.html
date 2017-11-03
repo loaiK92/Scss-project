@@ -22,18 +22,18 @@
 				</a>
 			</li>
 			<li>
-				<a class="communication" href="#">
+				<a class="communication" href="#" id="contactUsOpen">
 					<img src="https://png.icons8.com/communication/ios7/50/f1c40f">
 					<span>Contact</span></a>
 			</li>
 			<li>
-				<a class="question" href="#">
+				<a class="question" href="#" id="questionOpen">
 					<img src="https://png.icons8.com/ask-question/ios7/50/f1c40f">
 					<span>Question</span></a>
 			</li>
 		</ul>
 		</div>
-		<div id="aboutUs" class="aboutUsBox">
+		<div id="aboutUs" class="infoBox aboutUsBox">
 			<div class="head">
 				<h1>About us</h1>
 				<ul>
@@ -54,6 +54,32 @@
 				<p>hani1@gmail.com -- loai@gmail.com -- hani2@gmail.com</p>
 				</p>
 				<a href="#" class="aboutClose" id="aboutClose">Close</a>
+			</div>
+		</div>
+		<div id="contactUs" class="infoBox contactUsBox">
+			<div class="head">
+				<h1>Contact us</h1>
+				<p>We are ready to receive feedback and quations:</p>
+				<form action="">
+					<ul>
+						<li>
+							<label for="userName">The Name</label>
+	    					<input type="text" id="userName" name="userName" placeholder="Your name..">
+						</li>
+						<li>
+							<label for="eMail">E-mail</label>
+						    <input type="e-mail" id="eMail" name="eMail" placeholder="Your e-mail..">
+						</li>
+						<li>
+							<label for="subject">The message</label>
+							<textarea name="subject" id="subject" cols="30" rows="15"></textarea>
+						</li>
+						<li>
+							<input type="submit" value="Submit">
+						</li>
+					</ul>
+				</form>
+				<a href="#" class="contactClose" id="contactUsClose">Close</a>
 			</div>
 		</div>
 		
@@ -261,6 +287,12 @@
   		});
 	  $("#aboutClose").click(function(){
 		$(".aboutUsBox").css('display', 'none');
+  		});
+	  $("#contactUsOpen").click(function(){
+		$(".contactUsBox").css('display', 'block');
+  		});
+	  $("#contactUsClose").click(function(){
+		$(".contactUsBox").css('display', 'none');
   		});
 </script>
 </body>
