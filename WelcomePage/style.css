@@ -10,7 +10,7 @@ html ,body {
 	height: 100%;
 	font-size: 16px;
 }
-/*************Wellcom Page*************/
+/*************HEADER PAGE*************/
 .intro {
 	width: 100%;
 	height: 100%;
@@ -62,7 +62,7 @@ html ,body {
 	color: #fff;
 	border:3px solid #fff ;
 }
-
+/******************ICONS****************/
 .icons {
 	margin-top: 50px;
 	text-align: center;
@@ -86,9 +86,8 @@ html ,body {
 .icons>li>a:hover span {
 	opacity: 0.9;
 }
-
-#aboutUs ,#contact, #ask {
-	display: none;
+/***************ABOUT US - CONTACT US******************/
+.infoBox {
 	position: absolute;
 	top: 50px;
 	left: 50%;
@@ -97,10 +96,14 @@ html ,body {
 	height: 80%;
 	border: 2px solid #F2B637;
 	border-radius: 10px;
-	background: rgba(1,1, 1, 0.8);
+	background: rgba(2,2,2, 0.9);
 	padding: 30px;
+	overflow: hidden;
 }
-#aboutUs .head h1{
+.aboutUsBox, .contactUsBox{
+	display: none;
+}
+.infoBox .head h1{
 	position: absolute;
 	font-size: 8em;
 	text-align: center;
@@ -113,8 +116,8 @@ html ,body {
 	text-shadow: 5px 5px 20px #000;
 	font-family: 'Kalam', cursive;
 	text-decoration: underline;
-	
 }
+
 #aboutUs>.head .aboutClose{
 	display: block;
 	width: 100px;
@@ -128,6 +131,7 @@ html ,body {
 	text-decoration: none;
   	cursor: pointer;
 }
+
 #aboutUs .head ul{
   width: 80%;
 	margin: 50px 0 0 250px;
@@ -150,12 +154,62 @@ html ,body {
 }
 #aboutUs .head p a{
 	text-decoration: underline;
-  color:#F2F3F4;
+  	color:#F2F3F4;
 	font-weight: 600;
 }
 
+#contactUs .head h1{
+  bottom: -160px;
+}
+#contactUs>.head .contactClose{
+	display: block;
+	width: 100px;
+	height: 30px;
+  background: rgba(0,0, 0, 0);
+	border: none;
+	font-size: 2em;
+	color: #F2B637;
+  text-align: center;
+  margin: 30px auto;
+	text-decoration: none;
+  cursor: pointer;
+}
+#contactUs>.head p{
+  color:#F2F3F4;
+  font-size: 1.5em;
+	margin: 100px 0 10px 250px;
+}
 
-/****************Top Navbar****************/
+#contactUs>.head ul{
+	display: block;
+	width: 50%;
+	list-style: none;
+	margin: 0 auto;
+	border: 1px dotted #F2B637;
+}
+#contactUs>.head li{
+	padding: 10px;
+}
+#contactUs>.head li input{
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+}
+#contactUs>.head li textarea{
+  width: 90%;
+	border-radius: 5px;
+ 	display: block;
+  margin: 0 auto;
+}
+#contactUs>.head li label{
+	color:#F2F3F4;
+	margin: 0 0 5px 30px;
+}
+#contactUs>.head input[type="submit"]{
+	width: 40%;
+  margin: 0 auto;
+}
+/****************TOP NAVBAR****************/
 
 #navbar {
 	overflow: hidden;
@@ -199,7 +253,7 @@ html ,body {
 .sticky + .topContent {
   margin-top: 100px;
 }
-
+/********************MAIN SECTION**********************/
 main article {
 	width: 70%;
 	margin: 0 auto;
