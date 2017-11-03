@@ -15,21 +15,48 @@
 				<a href="#navbar" class="btn">Get Started&#8628;</a>
 			</div>
 			<ul class="icons">
-			<li><a class="about" href="#aboutUs"><img src="https://png.icons8.com/about/ios7/50/f1c40f"><span>About us</span></a></li>
-			<li><a class="communication" href="#"><img src="https://png.icons8.com/communication/ios7/50/f1c40f"><span>Contact</span></a></li>
-			<li><a class="question" href="#"><img src="https://png.icons8.com/ask-question/ios7/50/f1c40f"><span>Question</span></a></li>
+			<li>
+				<a class="about" href="#" id="aboutOpen">
+					<img src="https://png.icons8.com/about/ios7/50/f1c40f">
+					<span>About us</span>
+				</a>
+			</li>
+			<li>
+				<a class="communication" href="#">
+					<img src="https://png.icons8.com/communication/ios7/50/f1c40f">
+					<span>Contact</span></a>
+			</li>
+			<li>
+				<a class="question" href="#">
+					<img src="https://png.icons8.com/ask-question/ios7/50/f1c40f">
+					<span>Question</span></a>
+			</li>
 		</ul>
 		</div>
-		<div id="aboutUs">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsum repellendus, error laborum eligendi officia accusantium. Veritatis doloribus consequuntur facilis dolorem labore quas tenetur nisi atque iste, eaque, non voluptatem.</p>
+		<div id="aboutUs" class="aboutUsBox">
+			<div class="head">
+				<h1>About us</h1>
+				<ul>
+					<li>
+						<img src="images/man.png" alt="Hani">
+						<h3>Hani</h3>
+					</li>
+					<li>
+						<img src="images/man.png" alt="Loai">
+						<h3>Loai</h3>
+					</li>
+					<li>
+						<img src="images/man.png" alt="Hani">
+						<h3>Hani</h3>
+					</li>
+				</ul>
+				<p>We are three trainees at <a href="https://www.digitalcareerinstitute.org/">the Digital Career Institute</a>. This website is a training project that we designed during the web developer course. We are ready to receive feedback and suggestions on our e-mails.
+				<p>hani1@gmail.com -- loai@gmail.com -- hani2@gmail.com</p>
+				</p>
+				<a href="#" class="aboutClose" id="aboutClose">Close</a>
+			</div>
 		</div>
-		<div id="contact">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsum repellendus, error laborum eligendi officia accusantium. Veritatis doloribus consequuntur facilis dolorem labore quas tenetur nisi atque iste, eaque, non voluptatem.</p>
-		</div>
-		<div id="ask">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsum repellendus, error laborum eligendi officia accusantium. Veritatis doloribus consequuntur facilis dolorem labore quas tenetur nisi atque iste, eaque, non voluptatem.</p>
-		</div>
-
+		
 	</section>
 		<div id="navbar">
 			<ul>
@@ -229,6 +256,12 @@
 			    navbar.classList.remove("sticky");
 			  }
 			}
+	  $("#aboutOpen").click(function(){
+		$(".aboutUsBox").css('display', 'block');
+  		});
+	  $("#aboutClose").click(function(){
+		$(".aboutUsBox").css('display', 'none');
+  		});
 </script>
 </body>
 </html>
