@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sass Project</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<a class="logo-img" href="#"><img src="images/logo1.jpg"></a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#">Foundation</a></li>
+				<li><a href="#">Variable</a></li>
+				<li><a href="#">Mixin</a></li>
+				<li><a href="#">Extend</a></li>
+				<li><a href="#">Directive</a></li>
+				<li><a href="#">Math + Color</a></li>
+				<li><a href="#">Responsive</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="cf">
+		<article class="cf">
+			<section class="topSec">
+				<h1 class="secTitle">Preprocessing</h1>
+				<p class="secText">CSS on its own can be fun, but stylesheets are getting larger, more complex, and harder to maintain. This is where a preprocessor can help. Sass lets you use features that don't exist in CSS yet like variables, nesting, mixins, inheritance and other nifty goodies that make writing CSS fun again.</p>
+				<p class="secText">Once you start tinkering with Sass, it will take your preprocessed Sass file and save it as a normal CSS file that you can use in your web site.</p>
+				<p class="secText">The most direct way to make this happen is in your terminal. Once Sass is installed, you can run <span class="codeInText">sass input.scss output.css</span> from your terminal. You can watch either individual files or entire directories. In addition, you can watch folders or directories with the <span class="codeInText">--watch</span> flag. An example of running Sass while watching an entire directory is the following:</p>
+				<div class="codeBox">
+					<div class="codeText">
+						<p class="codeTextP"><span class="se">sass --watch app/sass:public/stylesheets</span></p>
+					</div>
+				</div>
+			</section>
+			<section class="secondSec">
+				<h1 class="secTitle">Variables</h1>
+				<p class="secText">Think of variables as a way to store information that you want to reuse throughout your stylesheet. You can store things like colors, font stacks, or any CSS value you think you'll want to reuse. Sass uses the <span class="codeInText">$</span> symbol to make something a variable. Here's an example:</p>
+				<div class="codeBox">
+					<h3 class="codeHeader">SCSS Syntax</h3>
+					<div class="codeText">
+						<p class="codeTextP"><span class="va">$font-stack</span>:<span class="se">Helvetica</span>, <span class="va">sans-serif</span>;</p>
+						<p class="codeTextP"><span class="va">$primary-color</span>: <span class="va">#333</span>;</p>
+						<p class="codeTextP"><span class="se">body</span> {</p>
+						<p class="codeTextP"><span class="pr">font</span>: <span class="va">100% $font-stack</span>;</p>
+						<p class="codeTextP"><span class="pr">font</span>: <span class="va">$primary-color</span>;</p>
+						<p class="codeTextP">}</p>
+					</div>
+				</div>
+				<p class="secText">When the Sass is processed, it takes the variables we define for the <span class="codeInText">$font-stack</span> and <span class="codeInText">$primary-color</span> and outputs normal CSS with our variable values placed in the CSS. This can be extremely powerful when working with brand colors and keeping them consistent throughout the site.</p>
+				<div class="codeBox">
+					<div class="codeText">
+						<p class="codeTextP"><span class="se">body</span> {</p>
+						<p class="codeTextP"><span class="pr">font</span>: <span class="va">100%</span> <span class="se">Helvetica</span>, <span class="va">sans-serif</span>;</p>
+						<p class="codeTextP"><span class="pr">color</span>: <span class="va">#333</span>;</p>
+					</div>
+				</div>
+			</section>
+		</article>
+		<aside class="cf">
+			<h2 class="asideTitle">Topics</h2>
+			<ul class="menu">
+				<li class="menuLi"><a href="#">Foundation</a></li>
+				<li class="menuLi"><a href="#">Variable</a></li>
+				<li class="menuLi"><a href="#">Mixin</a></li>
+				<li class="menuLi"><a href="#">Extend</a></li>
+				<li class="menuLi"><a href="#">Directive</a></li>
+				<li class="menuLi"><a href="#">Math + Color</a></li>
+				<li class="menuLi"><a href="#">Responsive</a></li>
+				<li class="menuLi"><a href="#index.html">Back to top</a></li>
+			</ul>
+		</aside>
+	</main>
+</body>
+</html>
