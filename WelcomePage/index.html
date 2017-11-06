@@ -4,31 +4,31 @@
 	<meta charset="UTF-8">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="jScript.js"></script>
-	<title>Document</title>
+	<title>Sass / Scss</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body onscroll="navbarFun()">
 	<section class="intro">
 		<div class="inner">
 			<div class="content">
-				<h1>An Introduction to <span>SASS/SCSS</span></h1>
+				<h1>An Introduction to <span>Sass/Scss</span></h1>
 				<a href="#navbar" class="btn">Get Started&#8628;</a>
 			</div>
 			<ul class="icons">
 			<li>
 				<a class="about" href="#" id="aboutOpen">
-					<img src="https://png.icons8.com/about/ios7/50/f1c40f">
+					<img src="images/icons-about-us.png">
 					<span>About us</span>
 				</a>
 			</li>
 			<li>
 				<a class="communication" href="#" id="contactUsOpen">
-					<img src="https://png.icons8.com/communication/ios7/50/f1c40f">
+					<img src="images/icons-communication.png">
 					<span>Contact</span></a>
 			</li>
 			<li>
 				<a class="question" href="#" id="questionOpen">
-					<img src="https://png.icons8.com/ask-question/ios7/50/f1c40f">
+					<img src="images/icons-question.png">
 					<span>Question</span></a>
 			</li>
 		</ul>
@@ -59,7 +59,7 @@
 		<div id="contactUs" class="infoBox contactUsBox">
 			<div class="head">
 				<h1>Contact us</h1>
-				<p>We are ready to receive feedback and quations:</p>
+				<p>We are ready to receive feedback and question:</p>
 				<form action="">
 					<ul>
 						<li>
@@ -72,7 +72,7 @@
 						</li>
 						<li>
 							<label for="subject">The message</label>
-							<textarea name="subject" id="subject" cols="30" rows="15"></textarea>
+							<textarea name="subject" id="subject" cols="30" rows="8" placeholder="Your message.."></textarea>
 						</li>
 						<li>
 							<input type="submit" value="Submit">
@@ -86,17 +86,17 @@
 	</section>
 		<div id="navbar">
 			<ul class="dropdown">
-				<li class="menuLi"><a href="#">An Introduction to <span>SASS/SCSS</span></a></li>
+				<li class="menuLi"><a href="#">An Introduction to <span>Sass/Scss</span></a></li>
 				<li class="menuLi dropbtn"><a href="#">Introduction <span class="arrow">&#9660;</span></a>
 					<div class="dropdown-content">
 						<div class="dropdown-content-link">
-							<a href="#">Sass</a>
+							<a href="#p1">Sass</a>
 						</div>
 						<div class="dropdown-content-link">
-							<a href="#">Installing Sass</a>
+							<a href="#p2">Installing Sass</a>
 						</div>
 						<div class="dropdown-content-link">
-							<a href="#">Compiling Sass into CSS</a>
+							<a href="#p3">Compiling Sass into CSS</a>
 						</div>
 					</div>
 				</li>
@@ -147,7 +147,7 @@
 	<main class="topContent">
 		<article>
 			<section class="firstSec">
-				<h1 class="secTitle">Sass (stylesheet language) :</h1>
+				<h1 class="secTitle" id="p1">Sass (stylesheet language) :</h1>
 				<p class="secText">Sass <span class="codeInText">(syntactically awesome stylesheets)</span> is a style sheet language initially designed by Hampton Catlin and developed by Natalie Weizenbaum. After its initial versions, Weizenbaum and Chris Eppstein continued to extend Sass with SassScript, a simple scripting language used in Sass files.</p>
 				<p class="secText">Sass is a scripting language that is interpreted or compiled into Cascading Style Sheets <span class="codeInText">(CSS)</span>. SassScript is the scripting language itself. Sass consists of two syntaxes. The original syntax, called <span class="codeInText">"the indented syntax"</span>, uses a syntax similar to Haml. It uses indentation to separate code blocks and newline characters to separate rules. The newer syntax, <span class="codeInText">"SCSS"</span>, uses block formatting like that of CSS. It uses braces to denote code blocks and semicolons to separate lines within a block. The indented syntax and SCSS files are traditionally given the extensions .sass and .scss, respectively.</p>
 				<ul class="secText">
@@ -158,7 +158,7 @@
 					<li>Advanced features like control directives for libraries</li>
 					<li>Well-formatted, customizable output</li>
 				</ul>
-				<h3 class="codeHeader">when should we learn Scss/Sass?</h3>
+				<h3 class="codeHeader">When should we learn Scss/Sass?</h3>
 				<p class="secText">Sass is for people who know the pain of working on
 									the CSS of a mature website—who have faced a CSS file that
 									four people wrote and that mutated into a huge, sprawling,
@@ -172,7 +172,7 @@
 									the myriad of other CSS-related technologies.
 									If you are looking for a CSS-ninja power-up, you’ve come
 									to the right place.</p>
-				<h3 class="codeHeader">Installing Sass :</h3>
+				<h3 class="codeHeader" id="p2">Installing Sass :</h3>
 				<p class="secText">So before you can explore the simplicity (and beauty) of Sass, you’ll
 									need to set a few things up. It’s useful to have a folder where you keep
 									all your Sass files for a project. Creating a Sass file couldn’t be easier:
@@ -235,7 +235,7 @@
 										you how to rock some Sass superpowers.
 										</p>
 				</div>
-				<h3 class="codeHeader">Compiling Sass into CSS :</h3>
+				<h3 class="codeHeader" id="p3">Compiling Sass into CSS :</h3>
 				<p class="secText">First, we need to create a Sass file. Any old thing will do—this is just
 									to show how we can turn our Sass into CSS. Since CSS is valid Sass,
 									take any random CSS file you have sitting around and change its
@@ -259,7 +259,7 @@
 									and incorporates them into the CSS file.<br>
 									Another useful command to mention here is convert. You can use this
 									to turn a .css file into a .sass or .scss file.<br>
-									<br>➤ Start with a simple bit of Sass.
+									<br>➤ Start with a simple bit of Sass. fabtext.scss
 									</p>
 				<div class="codeText">
 					<p class="codeTextP"><span class="se">.fab_text</span> {</p>
@@ -282,42 +282,13 @@
 				<p class="secText">➤ Convert a CSS file to a Sass file.</p>
 				<p class="terminal">sass convert test.css test.sass</p>
 			</section>
-			<section class="secondSec">
-				<h1 class="secTitle">Variables</h1>
-				<p class="secText">Think of variables as a way to store information that you want to reuse throughout your stylesheet. You can store things like colors, font stacks, or any CSS value you think you'll want to reuse. Sass uses the <span class="codeInText">$</span> symbol to make something a variable. Here's an example:</p>
-				<div class="codeBox">
-					<h3 class="codeHeader">SCSS Syntax</h3>
-					<div class="codeText">
-						<p class="codeTextP"><span class="va">$font-stack</span>:<span class="se">Helvetica</span>, <span class="va">sans-serif</span>;</p>
-						<p class="codeTextP"><span class="va">$primary-color</span>: <span class="va">#333</span>;</p>
-						<p class="codeTextP"><span class="se">body</span> {</p>
-						<p class="codeTextP"><span class="pr">font</span>: <span class="va">100% $font-stack</span>;</p>
-						<p class="codeTextP"><span class="pr">font</span>: <span class="va">$primary-color</span>;</p>
-						<p class="codeTextP">}</p>
-					</div>
-				</div>
-				<p class="secText">When the Sass is processed, it takes the variables we define for the <span class="codeInText">$font-stack</span> and <span class="codeInText">$primary-color</span> and outputs normal CSS with our variable values placed in the CSS. This can be extremely powerful when working with brand colors and keeping them consistent throughout the site.</p>
-				<div class="codeText">
-					<p class="codeTextP"><span class="se">body</span> {</p>
-					<p class="codeTextP"><span class="pr">font</span>: <span class="va">100%</span> <span class="se">Helvetica</span>, <span class="va">sans-serif</span>;</p>
-					<p class="codeTextP"><span class="pr">color</span>: <span class="va">#333</span>;</p>
-					<p class="codeTextP">}</p>
-				</div>
-			</section>
+			
+			<section></section>
+			<section></section>
+			<section></section>
+
 		</article>
-		<!-- <aside class="cf">
-			<h2 class="asideTitle">Topics</h2>
-			<ul class="menu">
-				<li class="menuLi"><a href="#">Foundation</a></li>
-				<li class="menuLi"><a href="#">Variable</a></li>
-				<li class="menuLi"><a href="#">Mixin</a></li>
-				<li class="menuLi"><a href="#">Extend</a></li>
-				<li class="menuLi"><a href="#">Directive</a></li>
-				<li class="menuLi"><a href="#">Math + Color</a></li>
-				<li class="menuLi"><a href="#">Responsive</a></li>
-				<li class="menuLi"><a href="#index.html">Back to top</a></li>
-			</ul>
-		</aside> -->
+
 	</main>
 	<script type="text/javascript">
 			var navbar = document.getElementById("navbar");

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Kalam|Dosis|Hind|Lobster');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
 *, body{
 	margin: 0;
 	padding: 0;
@@ -96,50 +97,67 @@ html ,body {
 	height: 80%;
 	border: 2px solid #F2B637;
 	border-radius: 10px;
-	background: rgba(2,2,2, 0.9);
-	padding: 30px;
+	background: rgba(0,0,0, 0.9);
 	overflow: hidden;
+	padding: 20px;
 }
 .aboutUsBox, .contactUsBox{
 	display: none;
 }
+.infoBox .head{
+	position:relative;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
 .infoBox .head h1{
 	position: absolute;
-	font-size: 8em;
+	font-size: 7em;
 	text-align: center;
 	display: block;
 	transform: rotate(-90deg);
-	transform-origin: left top 0;
-	bottom: -110px;
-	left: 50px;
+	transform-origin: left center;
+	top:80%;
+	left:10%;
 	color: #F2F3F4;
 	text-shadow: 5px 5px 20px #000;
-	font-family: 'Kalam', cursive;
+/* 	font-family: 'Kalam', cursive; */
 	text-decoration: underline;
+		font-family: 'Poiret One', cursive;
+
 }
 
 #aboutUs>.head .aboutClose{
 	display: block;
 	width: 100px;
 	height: 30px;
-  	background: rgba(0,0, 0, 0);
+  background: rgba(0,0, 0, 0);
 	border: none;
 	font-size: 2em;
 	color: #F2B637;
-  	text-align: center;
-  	margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
 	text-decoration: none;
-  	cursor: pointer;
+  cursor: pointer;
 }
 
 #aboutUs .head ul{
-  width: 80%;
-	margin: 50px 0 0 250px;
+	display: block;
+	margin:0 auto;
   list-style: none;
+	text-align: center;
 }
 #aboutUs .head ul li{
 	display: inline-block;
 	padding-right: 60px;
+}
+#aboutUs .head ul li:last-child{
+  padding-right:0;
+}
+#aboutUs .head ul li img{
+	width: 60%;
+	height: auto;
 }
 #aboutUs .head ul li h3{
 	color: #369;
@@ -147,10 +165,12 @@ html ,body {
 }
 #aboutUs .head p{
 	display: block;
-	margin:10px 0 30px 250px;
 	font-size: 2em;
-	text-shadow:1px 1px 10px #999;
-	color: #F2F3F4;
+	padding: 20px 130px 20px 260px;
+	text-shadow: 1px 1px 10px #F2B637;
+	color: #F2B637;
+	font-family: 'Poiret One', cursive;
+  text-align:justify;  
 }
 #aboutUs .head p a{
 	text-decoration: underline;
@@ -159,7 +179,8 @@ html ,body {
 }
 
 #contactUs .head h1{
-  bottom: -160px;
+	font-size: 6.5em;
+	top: 70%;
 }
 #contactUs>.head .contactClose{
 	display: block;
@@ -170,14 +191,16 @@ html ,body {
 	font-size: 2em;
 	color: #F2B637;
   text-align: center;
-  margin: 30px auto;
+  margin: 30px auto 0;
 	text-decoration: none;
   cursor: pointer;
 }
 #contactUs>.head p{
   color:#F2F3F4;
   font-size: 1.5em;
-	margin: 100px 0 10px 250px;
+	display: block;
+	margin: 50px auto 20px;
+	text-align: center;
 }
 
 #contactUs>.head ul{
@@ -185,34 +208,59 @@ html ,body {
 	width: 50%;
 	list-style: none;
 	margin: 0 auto;
-	border: 1px dotted #F2B637;
+	padding: 20px;
+	border: 1px dashed #F2B637;
+	background-color: #111;
 }
 #contactUs>.head li{
 	padding: 10px;
 }
-#contactUs>.head li input{
+#contactUs>.head li input[type="text"],
+#contactUs>.head li input[type="e-mail"] {
 	width: 80%;
 	display: block;
 	margin: 0 auto;
+	background-color: #333;
+	border: 1px solid #F2B637;
+	border-radius: 3px;
+	font-size: 1.5em;
+	color: #fff;
+	box-shadow: 1px 1px 10px #F2B637;
+
 }
 #contactUs>.head li textarea{
   width: 90%;
-	border-radius: 5px;
- 	display: block;
+  background-color: #333;
+	border: 1px solid #F2B637;
+	border-radius: 3px;
+	font-size: 1em;
+	color: #fff;
+	display: block;
   margin: 0 auto;
+		box-shadow: 1px 1px 10px #F2B637;
+
 }
 #contactUs>.head li label{
+	display: none;
 	color:#F2F3F4;
 	margin: 0 0 5px 30px;
 }
 #contactUs>.head input[type="submit"]{
 	width: 40%;
+	display: block;
+	background-color: #333;
+	color: #aaa;
+	padding: 5px;
+	border: 1px solid #F2B637;
+	border-radius: 5px;
+	box-shadow: 1px 1px 10px #F2B637;
   margin: 0 auto;
 }
 /****************TOP NAVBAR****************/
 
 #navbar {
 	background: rgba(42,46, 55, 0.8);
+	
 }
 #navbar>ul{
 	list-style: none;
@@ -220,8 +268,9 @@ html ,body {
 	cursor: pointer;
 	padding: 0;
 	margin:0;
-	border-top: 1px dotted #000;
+	border-top: 1px dashed #000;
   border-bottom: 10px solid #333;
+	box-sizing: border-box;
 }
 #navbar>ul>li{
 	display: inline-block;
@@ -230,7 +279,7 @@ html ,body {
 	height: auto;
 }
 #navbar>ul>li:first-child{
-  width: 25%;
+  	width: 25%;
 	font-size: 1.8em;
 	font-family: 'Kalam', cursive;
 }
@@ -241,6 +290,7 @@ html ,body {
 	text-decoration: none;
  	font-size: 1.2em;
 	text-shadow: 5px 5px 20px #000;
+	transition: all 1s;
 
 }
 #navbar>ul>li a:hover{
@@ -253,18 +303,19 @@ html ,body {
 
 .dropdown-content {
 	display: none;
-	width: 180%;
-	padding: 10px;
+	width: 110%;
+	padding: 3px;
 	position: absolute;
-	left: -42%;
+	/* center box in absolute left 50% + translateX -50%*/
+	left: 50%;
+	transform: translateX(-50%);
 	background-color: rgba(42,46, 55, 0.8);
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 10;
 }
 
 .dropdown-content-link {
 	display: block;
-	width: 96,5%;
 	height: auto;
 	padding: 5px;
 	margin: 5px;
@@ -291,7 +342,8 @@ html ,body {
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%
+  width: 100%;
+	z-index: 2;
 }
 .sticky + .topContent {
   margin-top: 100px;
@@ -320,6 +372,7 @@ main article {
 	padding: 1% 2%;
 	line-height: 1.3;
 }
+
 .secText li {
 	list-style: circle;
 	padding-left: 5px;
